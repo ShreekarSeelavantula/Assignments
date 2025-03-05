@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        p{
+            font-family: 'Inter', Arial , sans-serif !important;/*here also you have to mention important otherwise the browser is overriding your style with default styles.*/
+            display: inline-block;
+        }
+
+    div{
+        border-style: solid;
+      /*  border-color: white;*/
+    }
+    .q_first
+    {
+        width: 850px;
+        display: grid;
+        grid-template-columns: 250px 350px 250px;
+        grid-template-rows: 300px;
+        margin-top:150px ;
+        margin-left: 100px;
+    }
+
+    .q_third ,.q_fourth , .q_fifth
+    {
+        display: grid;
+        grid-template-rows: 150px 150px;
+    }
+
+    .q_six img , .q_ten img{
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .q_eight img{
+        width: 200px;
+        margin-left: 80px;
+
+    }
+
+    .one , .two, .three
+    {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+
+    }
+
+    .two{
+        margin-left: 30px;
+    }
+
+    .three{
+        margin-left: 35px;
+    }
+
+    .w_one{
+        width: 300px;
+    }
+    .w_one
+    {
+        
+        display: grid;
+        width: 1100px;
+        grid-template-columns: 550px 550px;
+        grid-template-rows: 50px;
+    }
+
+    .w_two img
+    {
+       width: 105px;
+       margin-top:14px;
+       margin-left: 99px;
+    }
+    .e_first
+    {
+        display: grid;
+        grid-template-rows: 50px 50px;
+        grid-template-columns: 230px;
+        width: 230px;
+        margin-top: 75px;
+        margin-left: 420px;
+    }
+
+
+    .e_two p
+    {
+   display: inline-block;
+   font-size: 35px;
+   margin: 0;
+   margin-left: 28px;
+   font-weight: 500;
+    }
+    .e_three p{
+        display: inline-block;
+        font-size: 16px;
+        margin: 0;
+        margin-top: 10px;
+        color: rgb(136, 130, 130);
+
+    }
+
+    .w_three a
+    {
+      display: inline-block;
+      font-size: 15px;
+      color: rgb(97, 90, 90);
+      text-decoration: none;
+      margin-right: 25px;
+      margin-top: 10px;
+
+
+    }
+    .w_three img{
+        margin-top: 10px;
+        width: 20px;
+        vertical-align: top;
+       
+    }
+
+    .a{
+        margin-left: 20px;
+    }
+    .b{
+        color: rgb(87, 87, 240) !important;/* here the browser default color will overrider the blue rgb , so you have to specify that it is important.*/
+    }
+    
+    </style>
+</head>
+<body>
+
+    <div class="w_one">
+        <div class="w_two"><img src="logo.svg" alt=""></div>
+        <div class="w_three">
+            <a href="#" class="a">Sign up</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#" class="b">Pricing</a>
+            <a href="#">Support</a>
+            <img src="three_lines.png" alt="">
+
+
+        </div>
+    </div>
+
+    <div class="e_first">
+        <div class="e_two"><p>Charges</p></div>
+        <div class="e_three"><p>List of all charges and taxes</p></div>
+    </div>
+    <div class="q_first">
+        <div class="q_third">
+            <div class="q_six"><img src="0.svg" alt=""></div>
+            <div class="q_seven"><p class="one">Free equity delivery</p>
+            <p class="four">All equity delivery investments (NSE, BSE), are absolutely free — ₹ 0 brokerage.</p></div>
+
+        </div>
+        <div class="q_fourth">
+            <div class="q_eight"><img src="20.svg" alt=""></div>
+            <div class="q_nine"><p class="two">Intraday and F&O trades</p>
+                <p class="five">Flat ₹ 20 or 0.03% (whichever is lower) per executed order on intraday trades across equity, currency, and commodity trades. Flat ₹20 on all option trades.</p>
+            </div>
+
+        </div>
+        <div class="q_fifth">
+            <div class="q_ten"><img src="0.svg" alt=""></div>
+            <div class="q_eleven"><p class="three">Free direct MF</p>
+                <p class="six">All direct mutual fund investments are absolutely free — ₹ 0 commissions & DP charges.</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
